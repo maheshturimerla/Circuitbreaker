@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: cb-demo-consumer
+    
+  cloud:
+    services:
+      registrationMethod: route
+    
+security:
+  basic:
+    enabled: false
+    
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false
+
+management:
+  security:
+    enabled: false

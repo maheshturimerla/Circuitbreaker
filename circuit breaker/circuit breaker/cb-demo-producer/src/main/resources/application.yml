@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cb-demo-producer
+  cloud:
+    services:
+      registrationMethod: route
+    
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false

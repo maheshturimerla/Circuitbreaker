@@ -1,0 +1,11 @@
+---
+applications:
+- name: cb-demo-producer
+  instances: 1
+  health-check-type: none
+  host: cb-demo-producer
+  buildpack: java_buildpack
+  path: target/cb-demo-producer-0.0.1-SNAPSHOT.jar
+  services:
+  - dev-service-registry
+  - dev-circuit-breaker

@@ -1,0 +1,12 @@
+---
+applications:
+- name: config-demo-1
+  instances: 1
+  health-check-type: none
+  host: config-demo-stage
+  buildpack: java_buildpack_offline
+  path: target/config-demo-1-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: stage
+  services:
+  - demo-config-server
